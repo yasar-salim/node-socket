@@ -29,6 +29,9 @@ io.on('connection', (socket) => {
     console.log(message); 
   });
 });
+app.get('/', function (req, res) {
+    res.send('hello world')
+  });
  
 var port = process.env.PORT || 3001;
  
